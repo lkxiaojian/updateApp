@@ -18,7 +18,6 @@ package com.xuexiang.xupdatedemo.http;
 
 import android.support.annotation.NonNull;
 
-
 import com.xuexiang.xupdate.proxy.IUpdateHttpService;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.FileCallBack;
@@ -30,7 +29,6 @@ import java.util.TreeMap;
 
 import okhttp3.Call;
 import okhttp3.Request;
-import okhttp3.Response;
 
 /**
  * 使用okhttp

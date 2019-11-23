@@ -67,8 +67,8 @@ public class MainFragment extends XPageSimpleListFragment {
 
 
 
-    private String mUpdateUrl = "http://118.190.55.201/queshan/getAppInfo.do";
-    private String mUpdateUrl2 = "http://118.190.55.201/queshan/getAppInfo.do";
+    private String mUpdateUrl = "http://47.104.93.173:8080/edu_zxzjjg/getAppInfo.do";
+    private String mUpdateUrl2 = "http://47.104.93.173:8080/edu_zxzjjg/getAppInfo.do";
 
     private final static int REQUEST_CODE_SELECT_APK_FILE = 1000;
     @Override
@@ -113,6 +113,7 @@ public class MainFragment extends XPageSimpleListFragment {
                 break;
             case 4:
                 XUpdate.newBuild(getActivity())
+                        .updateAppUrl("https://edu-zxzjjg.oss-cn-beijing.aliyuncs.com/")
                         .updateUrl(mUpdateUrl2)
                         .update();
                 break;

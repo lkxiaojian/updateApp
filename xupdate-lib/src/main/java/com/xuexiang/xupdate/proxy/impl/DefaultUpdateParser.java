@@ -49,9 +49,9 @@ public class DefaultUpdateParser implements IUpdateParser {
                     updateEntity.setHasUpdate(true)
                             .setUpdateContent(checkResult.getData().getUpdateInfo())
                             .setVersionCode(checkResult.getData().getVersion())
-                            .setVersionName(checkResult.getData().getName())
+                            .setVersionName("最新")
                             .setDownloadUrl(checkResult.getData().getUrl())
-                            .setSize(checkResult.getData().getSize())
+                            .setSize(checkResult.getData().getSize()/1024)
                             .setMd5(checkResult.getData().getApkMd5());
                 }
                 return updateEntity;
